@@ -1,0 +1,40 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 34,
+    "margin-top": 8,
+    "margin-left": 12,
+    "margin-right": 12,
+
+    "modules-left": ["custom/launcher", "ext/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "network", "tray"],
+
+    "custom/launcher": {
+        "format": "󰣇 ",
+        "on-click": "rofi -show drun",
+        "tooltip": false
+    },
+    "clock": {
+        "format": "  {:%H:%M  󰃭  %d.%m.%Y}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰝟 Muted",
+        "format-icons": {
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "on-click": "pavucontrol"
+    },
+    "network": {
+        "format-wifi": "  {essid}",
+        "format-ethernet": "󰈀 Ethernet",
+        "format-disconnected": "⚠ Offline",
+        "tooltip-format": "{ifname} via {gwaddr}"
+    },
+    "tray": {
+        "icon-size": 16,
+        "spacing": 8
+    }
+}

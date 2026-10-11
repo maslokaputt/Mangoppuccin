@@ -1,0 +1,59 @@
+* {
+border: none;
+border-radius: 0;
+font-family: "JetBrainsMono Nerd Font", monospace;
+font-size: 13px;
+font-weight: bold;
+min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+/* Moduły jako pływające kapsułki */
+#custom-launcher,
+#workspaces,
+#clock,
+#pulseaudio,
+#network,
+#tray {
+background-color: rgba(30, 30, 46, 0.85);
+color: #cdd6f4;
+padding: 4px 14px;
+margin: 0px 4px;
+border-radius: 10px;
+border: 1px solid rgba(137, 180, 250, 0.25);
+}
+
+#custom-launcher {
+color: #89b4fa;
+font-size: 16px;
+padding-right: 16px;
+}
+
+#clock {
+color: #cba6f7;
+}
+
+#pulseaudio {
+color: #f9e2af;
+}
+
+#network {
+color: #a6e3a1;
+}
+
+#workspaces button {
+padding: 0 6px;
+color: #6c7086;
+background: transparent;
+}
+
+#workspaces button.active {
+color: #89b4fa;
+}
+
+#workspaces button:hover {
+color: #f5e0dc;
+}

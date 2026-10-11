@@ -1,0 +1,4 @@
+timeout 300 'swaylock -f --screenshots --clock --indicator --effect-blur 7x5'
+timeout 600 'wlopm --off *'
+resume 'wlopm --on *'
+before-sleep 'swaylock -f --screenshots --clock --indicator --effect-blur 7x5'

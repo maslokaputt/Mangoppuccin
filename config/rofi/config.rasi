@@ -1,0 +1,86 @@
+configuration {
+    modi:                       "drun,run,filebrowser";
+    show-icons:                 true;
+    display-drun:               " ";
+    drun-display-format:        "{name}";
+    font:                       "JetBrainsMono Nerd Font 10";
+}
+
+@theme "/dev/null"
+
+* {
+    bg:                         rgba(30, 30, 46, 0.85);
+    bg-alt:                     rgba(49, 50, 68, 0.9);
+    bg-selected:                #89b4fa;
+    fg:                         #cdd6f4;
+    fg-selected:                #11111b;
+    border-col:                 #89b4fa;
+}
+
+window {
+    width:                      500px;
+    background-color:           @bg;
+    border:                     2px;
+    border-color:               @border-col;
+    border-radius:              12px;
+    padding:                    15px;
+}
+
+mainbox {
+    background-color:           transparent;
+    children:                   [ "inputbar", "listview" ];
+    spacing:                    10px;
+}
+
+inputbar {
+    background-color:           @bg-alt;
+    border-radius:              8px;
+    padding:                    8px 12px;
+    children:                   [ "prompt", "entry" ];
+}
+
+prompt {
+    background-color:           transparent;
+    text-color:                 #89b4fa;
+    padding:                    0px 8px 0px 0px;
+}
+
+entry {
+    background-color:           transparent;
+    text-color:                 @fg;
+    placeholder:                "Szukaj...";
+    placeholder-color:          #6c7086;
+}
+
+listview {
+    background-color:           transparent;
+    columns:                    1;
+    lines:                      7;
+    spacing:                    5px;
+    cycle:                      true;
+    dynamic:                    true;
+}
+
+element {
+    background-color:           transparent;
+    text-color:                 @fg;
+    border-radius:              8px;
+    padding:                    8px;
+    spacing:                    10px;
+}
+
+element selected {
+    background-color:           @bg-selected;
+    text-color:                 @fg-selected;
+}
+
+element-icon {
+    background-color:           transparent;
+    size:                       24px;
+}
+
+element-text {
+    background-color:           transparent;
+    text-color:                 inherit;
+    vertical-align:             0.5;
+}
