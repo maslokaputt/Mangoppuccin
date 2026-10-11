@@ -9,6 +9,9 @@ Check out the full list of keyboard shortcuts in [keybindings.md](keybindings.md
 ---
 
 ## 🎨 Overview & Components
+| Desktop | Rofi Menu |
+| :---: | :---: |
+| ![Desktop](assets/asset.png) | ![Rofi](assets/asset2.png) |
 
 * **Window Manager:** `mangoWM`
 * **Status Bar:** `Waybar` (Pill layout)
