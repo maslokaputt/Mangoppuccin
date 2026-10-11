@@ -2,10 +2,9 @@
 
 A clean, modern, and aesthetic **mangoWM** (Wayland) environment styled with the **Catppuccin Mocha** color palette.
 > **Note:** Some functions are WIP.
+## ⌨️ Keybindings
 
-#⌨️ Keybindings
-
-For a full list of custom keybindings and shortcuts, check keybindings.md.
+Check out the full list of keyboard shortcuts in [keybindings.md](keybindings.md).
 
 ---
 
