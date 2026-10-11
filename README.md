@@ -1,6 +1,7 @@
 # 🥭 Mangoppuccin (Catppuccin mocha) dotfiles
 
 A clean, modern, and aesthetic **mangoWM** (Wayland) environment styled with the **Catppuccin Mocha** color palette.
+> **Note:** Some functions are WIP.
 
 #⌨️ Keybindings
 
