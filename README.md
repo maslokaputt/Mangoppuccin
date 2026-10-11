@@ -5,7 +5,7 @@ A clean, modern, and aesthetic **mangoWM** (Wayland) environment styled with the
 
 #⌨️ Keybindings
 
-For a full list of custom keybindings and shortcuts, check keybinds.md.
+For a full list of custom keybindings and shortcuts, check keybindings.md.
 
 ---
 
