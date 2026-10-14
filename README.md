@@ -33,7 +33,7 @@ Requires an **Arch-based** distro (uses `pacman` and the AUR). Run as a normal u
 
 The script installs `git` and `yay` for you if they are missing.
 
-> ⚠️ **Notice:** The script moves your existing `waybar`, `rofi`, `kitty`, `fastfetch`, `mangowm` and `swaylock` config folders to `~/.config-backup/mangoppuccin-<date>/` before copying the new ones. AUR packages are not auto-confirmed, so you can review their PKGBUILDs.
+> ⚠️ **Notice:** The script moves your existing `kitty`, `mango`, `rofi`, `swayidle`, `waybar` configs and `starship.toml` to `~/.config-backup/mangoppuccin-<date>/` before copying the new ones. AUR packages are not auto-confirmed, so you can review their PKGBUILDs.
 
 ```bash
 # 1. Clone the repository
@@ -44,6 +44,8 @@ cd Mangoppuccin
 chmod +x install.sh
 ./install.sh
 ```
+
+Keyboard layout is set to Polish (`xkb_rules_layout=pl`). Change it in `~/.config/mango/config.conf`.
 
 ---
 
@@ -59,6 +61,9 @@ chsh -s $(which fish)
 
 # 2. Disable the welcome greeting
 fish -c "set -U fish_greeting ''"
+
+# 3. Enable the starship prompt
+echo 'starship init fish | source' >> ~/.config/fish/config.fish
 ```
 
 ---
