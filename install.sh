@@ -43,6 +43,12 @@ OFFICIAL_PKGS=(
     papirus-icon-theme
     fish
     starship
+    mako
+    grim
+    slurp
+    wl-clipboard
+    yazi
+    pavucontrol
 )
 
 # 2. yay (if not installed)
@@ -71,20 +77,25 @@ yay -S --needed "${AUR_PKGS[@]}"
 # 4. copying configs (existing ones are backed up, not deleted)
 echo "📑 copying configs..."
 
-CONFIG_DIRS=(waybar rofi kitty fastfetch mangowm swaylock)
 BACKUP_DIR="$HOME/.config-backup/mangoppuccin-$(date +%Y%m%d-%H%M%S)"
 
 mkdir -p "$HOME/.config"
 
-for dir in "${CONFIG_DIRS[@]}"; do
-    if [ -e "$HOME/.config/$dir" ]; then
+# back up only what this repo will overwrite
+for src in config/*; do
+    name="$(basename "$src")"
+    if [ -e "$HOME/.config/$name" ]; then
         mkdir -p "$BACKUP_DIR"
-        mv "$HOME/.config/$dir" "$BACKUP_DIR/"
-        echo "   backed up: ~/.config/$dir"
+        mv "$HOME/.config/$name" "$BACKUP_DIR/"
+        echo "   backed up: ~/.config/$name"
     fi
 done
 
 cp -rf config/. "$HOME/.config/"
+
+# wallpapers (mango config points to ~/.config/mango/wallpapers)
+mkdir -p "$HOME/.config/mango/wallpapers"
+cp -rf wallpapers/. "$HOME/.config/mango/wallpapers/"
 
 echo "✅ installation finished!"
 if [ -d "$BACKUP_DIR" ]; then
