@@ -10,8 +10,7 @@ Here is the complete list of keybindings configured in this setup.
 | Keybinding | Action |
 | :--- | :--- |
 | `SUPER` + `SHIFT` + `R` | Reload mangoWM configuration |
-| `SUPER` + `ALT` + `L` | Cycle window layouts (`dwindle` ➔ `scroller` ➔ `monocle`) |
-| `SUPER` + `L` | Lock screen (`swaylock-effects` with blur) |
+| `SUPER` + `CTRL` + `L` | Lock screen (`swaylock-effects` with blur) |
 | `SUPER` + `M` | Quit / Exit mangoWM |
 
 ---
